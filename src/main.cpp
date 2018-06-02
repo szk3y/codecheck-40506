@@ -1,12 +1,9 @@
 #include <cstdio>
 
-#define BUF_SIZE 0x1000
-
-char buf[BUF_SIZE];
-
 int main(int argc, char *argv[])
 {
-  fgets(buf, sizeof(buf), stdin);
-  printf("Hello, %s!", buf);
+  if(argc == 2) {
+    printf("Hello, %s!", argv[1]);
+  }
   return 0;
 }
