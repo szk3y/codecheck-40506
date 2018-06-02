@@ -1,11 +1,12 @@
-#include <iostream>
-using namespace std;
+#include <cstdio>
+
+#define BUF_SIZE 0x1000
+
+char buf[BUF_SIZE];
 
 int main(int argc, char *argv[])
 {
-  // start from 1 to ignore script name; argv[0] will be a name of processing file.
-  for (int i = 1; i < argc; i++) {
-    printf ("argv[%i]: %s\n", i, argv[i]);
-  }
+  fgets(buf, sizeof(buf), stdin);
+  printf("Hello, %s!", buf);
   return 0;
 }
