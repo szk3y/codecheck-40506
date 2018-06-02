@@ -6,4 +6,4 @@ C, C++, Python
 ## Q2. コードの説明 Code Explanation
 あなたのコードがどのように動作するのか、簡潔に説明してください。
 Write a brief explanation about how your code works here.
-
+コマンドライン引数が1つのとき(argc == 2のとき)，Hello <argv[1]>と表示する
